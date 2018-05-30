@@ -1,0 +1,49 @@
+{
+  "sentences": [
+    {
+      "text": "putar lagu separuh aku dari noah",
+      "intent": "play_music",
+      "entities": [
+        {
+          "start": 2,
+          "end": 3,
+          "entity": "title_song",
+          "value": "separuh aku"
+        },
+        {
+          "start": 5,
+          "entity": "name_artist",
+          "value": "noah"
+        }
+      ]
+    },
+    {
+      "text": "putar album noah yang seperti seharusnya",
+      "intent": "play_music",
+      "entities": [
+        {
+          "start": 2,
+          "entity": "name_artist",
+          "value": "noah"
+        },
+        {
+          "start": 4,
+          "end": 5,
+          "entity": "title_album",
+          "value": "seperti seharusnya"
+        }
+      ]
+    },
+    {
+      "text": "putar lagu lagunya noah",
+      "intent": "play_music",
+      "entities": [
+        {
+          "start": 3,
+          "entity": "name_artist",
+          "value": "noah"
+        }
+      ]
+    }
+  ]
+}
