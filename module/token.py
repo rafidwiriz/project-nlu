@@ -11,11 +11,4 @@ class Token(object):
         self.pos = pos if pos else self.pos
 
     def delete(self, type_attr):
-        if (type_attr == 'stem'):
-            self.stem = '_'
-        elif (type_attr == 'entity'):
-            self.entity = '_'
-        elif (type_attr == 'pos'):
-            self.pos = '_'
-        else:
-            print("Atribut tidak diketahui. Pilih antara 'stem', 'entity', atau 'pos'.")
+        setattr(self, type_attr, '_')
