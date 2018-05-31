@@ -4,6 +4,7 @@ from pathlib import Path
 from .training_data import TrainingData
 
 def load_data(file_dir):
+    """str -> [TrainingData]"""
     train_datas = []
     file_path = Path(file_dir)
     with open(file_path) as json_data:

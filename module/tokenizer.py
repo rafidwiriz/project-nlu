@@ -3,11 +3,9 @@ from .training_data import TrainingData
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 
 def tokenize(sent_data):
-    # TrainingData -> ??
+    """TrainingData -> [Token]"""
     tokens = []
-    sent_data.set("text", sent_data.get("text").split())
-    slot = change_to_entity(sent_data)
-    words = sent_data.get("text")
+    words, slot = change_to_entity(sent_data)
     for word in words:
         token = Token(word)
         tokens.append(token)
@@ -15,14 +13,14 @@ def tokenize(sent_data):
     return tokens
 
 def stem(token):
-    # Token -> ??
+    """Token* -> ??"""
     stemmer = StemmerFactory().create_stemmer()
     if (token.entity == '_'):
         stem_word = stemmer.stem(token.word)
         token.set(stem=stem_word)
 
 def change_to_entity(sent_data):
-    # TrainingData -> TrainingData(In), Dict
+    """TrainingData -> [str], Dict"""
     slot = {}
     entities = sent_data.get("entities")
     text = sent_data.get("text")
@@ -33,5 +31,4 @@ def change_to_entity(sent_data):
         for i in range(entity["start"], (entity["end"] + 1)):
             text[i] = "({})".format(entity["entity"]) if (i == entity["start"]) else 'del'
     if 'del' in text: text.remove('del')
-    sent_data.set("text", text)
-    return slot
+    return text, slot
