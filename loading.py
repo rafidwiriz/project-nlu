@@ -12,8 +12,10 @@ for sent in train:
     slot = extract_entity(sent)
     slots.append(slot)
 for i, sent in enumerate(train):
+    print(' '.join(sent.get("tokens")))
     for j, token in enumerate(sent.get("tokens")):
         vocab_data.add_word(token)
-print(vocab_data.vocab)
+for i, sent in enumerate(train):
+    print(vocab_data.create_bow(sent.get("tokens")))
 for slot in slots:
     print(slot)
