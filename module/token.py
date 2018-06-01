@@ -1,4 +1,6 @@
 class Token(object):
+    """Bertanggungjawab dalam pembuatan dan penyimpanan token."""
+    
     def __init__(self, word, stem=None, entity=None, pos=None):
         self.word = word # str
         self.stem = stem if stem else '_' # str
