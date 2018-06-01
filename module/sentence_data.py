@@ -3,8 +3,8 @@ import json
 class SentenceData(object):
     """Bertanggungjawab dalam memuat dan memproses data kalimat."""
 
-    def __init__(self, text, intent, entities):
-        self.intent = intent # str
+    def __init__(self, text, entities):
+        #self.intent = intent # str
         self.text = text # str
         self.entities = entities # str
         self.tokens = [] # [str]

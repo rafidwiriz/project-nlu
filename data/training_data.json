@@ -44,6 +44,573 @@
           "value": "noah"
         }
       ]
+    },
+    {
+      "text": "putar salah sambung terbaru dari prambors",
+      "intent": "play_radio_content",
+      "entities": [
+        {
+          "start": 1,
+          "end": 2,
+          "value": "salah sambung",
+          "entity": "tag"
+        },
+        {
+          "start": 3,
+          "value": "true",
+          "entity": "recent"
+        },
+        {
+          "start": 5,
+          "value": "prambors",
+          "entity": "name_radio"
+        }
+      ]
+    },
+    {
+      "text": "tolong mainkan pamit terima kasih",
+      "intent": "play_music",
+      "entities": [
+        {
+          "start": 2,
+          "value": "pamit",
+          "entity": "title_song"
+        }
+      ]
+    },
+    {
+      "text": "mainkan album rekomendasi untuk saya",
+      "intent": "play_recommendation",
+      "entities": [
+        {
+          "start": 1,
+          "value": "album",
+          "entity": "type_content"
+        }
+      ]
+    },
+    {
+      "text": "putar musik tulus separuh aku",
+      "intent": "play_music",
+      "entities": [
+        {
+          "start": 2,
+          "value": "tulus",
+          "entity": "name_artist"
+        },
+        {
+          "start": 3,
+          "end": 4,
+          "value": "separuh aku",
+          "entity": "title_song"
+        }
+      ]
+    },
+    {
+      "text": "putar komedi terbaru dari gen fm jakarta",
+      "intent": "play_radio_content",
+      "entities": [
+        {
+          "start": 1,
+          "value": "komedi",
+          "entity": "tag"
+        },
+        {
+          "start": 2,
+          "value": "true",
+          "entity": "recent"
+        },
+        {
+          "start": 4,
+          "end": 6,
+          "value": "gen fm jakarta",
+          "entity": "name_radio"
+        }
+      ]
+    },
+    {
+      "text": "putarkan musik separuh aku",
+      "intent": "play_music",
+      "entities": [
+        {
+          "start": 2,
+          "end": 3,
+          "value": "separuh aku",
+          "entity": "title_song"
+        }
+      ]
+    },
+    {
+      "text": "puterin separuh aku dong",
+      "intent": "play_music",
+      "entities": [
+        {
+          "start": 1,
+          "end": 2,
+          "value": "separuh aku",
+          "entity": "title_song"
+        }
+      ]
+    },
+    {
+      "text": "putar salah sambung terkini dari prambors",
+      "intent": "play_radio_content",
+      "entities": [
+        {
+          "start": 1,
+          "end": 2,
+          "value": "salah sambung",
+          "entity": "tag"
+        },
+        {
+          "start": 3,
+          "value": "true",
+          "entity": "recent"
+        },
+        {
+          "start": 5,
+          "value": "prambors",
+          "entity": "name_radio"
+        }
+      ]
+    },
+    {
+      "text": "putar playlist rekomendasi untukku ya",
+      "intent": "play_recommendation",
+      "entities": [
+        {
+          "start": 1,
+          "value": "playlist",
+          "entity": "type_content"
+        }
+      ]
+    },
+    {
+      "text": "play lagu pamit",
+      "intent": "play_music",
+      "entities": [
+        {
+          "start": 2,
+          "value": "pamit",
+          "entity": "title_song"
+        }
+      ]
+    },
+    {
+      "text": "live streaming gen fm jakarta dong",
+      "intent": "play_radio",
+      "entities": [
+        {
+          "start": 2,
+          "end": 4,
+          "value": "gen fm jakarta",
+          "entity": "name_radio"
+        }
+      ]
+    },
+    {
+      "text": "tolong mainkan album seperti seharusnya",
+      "intent": "play_music",
+      "entities": [
+        {
+          "start": 3,
+          "end": 4,
+          "value": "seperti seharusnya",
+          "entity": "title_album"
+        }
+      ]
+    },
+    {
+      "text": "minta pamit dong",
+      "intent": "play_music",
+      "entities": [
+        {
+          "start": 1,
+          "value": "pamit",
+          "entity": "title_song"
+        }
+      ]
+    },
+    {
+      "text": "putarkan lagu yang sedang hot ya",
+      "intent": "play_music_popular",
+      "entities": []
+    },
+    {
+      "text": "tolong mainkan musik yang sedang populer",
+      "intent": "play_music_popular",
+      "entities": []
+    },
+    {
+      "text": "tolong mainkan album monokrom",
+      "intent": "play_music",
+      "entities": [
+        {
+          "start": 3,
+          "value": "monokrom",
+          "entity": "title_album"
+        }
+      ]
+    },
+    {
+      "text": "putar album monokrom dong",
+      "intent": "play_music",
+      "entities": [
+        {
+          "start": 2,
+          "value": "monokrom",
+          "entity": "title_album"
+        }
+      ]
+    },
+    {
+      "text": "puterin album monokrom dong",
+      "intent": "play_music",
+      "entities": [
+        {
+          "start": 2,
+          "value": "monokrom",
+          "entity": "title_album"
+        }
+      ]
+    },
+    {
+      "text": "putar playlist hits terbaik",
+      "intent": "play_playlist",
+      "entities": [
+        {
+          "start": 2,
+          "value": "hits terbaik",
+          "entity": "name_playlist"
+        }
+      ]
+    },
+    {
+      "text": "puterin album seperti seharusnya dong",
+      "intent": "play_music",
+      "entities": [
+        {
+          "start": 2,
+          "value": "seperti seharusnya",
+          "entity": "title_album"
+        }
+      ]
+    },
+    {
+      "text": "putar musik noah separuh aku",
+      "intent": "play_music",
+      "entities": [
+        {
+          "start": 2,
+          "value": "noah",
+          "entity": "name_artist"
+        },
+        {
+          "start": 3,
+          "value": "separuh aku",
+          "entity": "title_song"
+        }
+      ]
+    },
+    {
+      "text": "putar komedi dari gen fm jakarta",
+      "intent": "play_radio_content",
+      "entities": [
+        {
+          "start": 1,
+          "value": "komedi",
+          "entity": "tag"
+        },
+        {
+          "start": 3,
+          "value": "gen fm jakarta",
+          "entity": "name_radio"
+        }
+      ]
+    },
+    {
+      "text": "tulus separuh aku",
+      "intent": "play_music",
+      "entities": [
+        {
+          "start": 0,
+          "value": "tulus",
+          "entity": "name_artist"
+        },
+        {
+          "start": 1,
+          "value": "separuh aku",
+          "entity": "title_song"
+        }
+      ]
+    },
+    {
+      "text": "putar salah sambung terkini dari gen fm jakarta",
+      "intent": "play_radio_content",
+      "entities": [
+        {
+          "start": 1,
+          "value": "salah sambung",
+          "entity": "tag"
+        },
+        {
+          "start": 3,
+          "value": "true",
+          "entity": "recent"
+        },
+        {
+          "start": 5,
+          "value": "gen fm jakarta",
+          "entity": "name_radio"
+        }
+      ]
+    },
+    {
+      "text": "mainkan lagu pamit",
+      "intent": "play_music",
+      "entities": [
+        {
+          "start": 2,
+          "value": "pamit",
+          "entity": "title_song"
+        }
+      ]
+    },
+    {
+      "text": "mainkan keluarga tak kasat mata episode satu",
+      "intent": "play_radio_content",
+      "entities": [
+        {
+          "start": 1,
+          "value": "keluarga tak kasat mata",
+          "entity": "title_content"
+        },
+        {
+          "start": 6,
+          "value": "1",
+          "entity": "episode"
+        }
+      ]
+    },
+    {
+      "text": "separuh aku dari noah",
+      "intent": "play_music",
+      "entities": [
+        {
+          "start": 0,
+          "value": "separuh aku",
+          "entity": "title_song"
+        },
+        {
+          "start": 3,
+          "value": "noah",
+          "entity": "name_artist"
+        }
+      ]
+    },
+    {
+      "text": "live gen fm jakarta dong",
+      "intent": "play_radio",
+      "entities": [
+        {
+          "start": 1,
+          "value": "gen fm jakarta",
+          "entity": "name_radio"
+        }
+      ]
+    },
+    {
+      "text": "putar komedi terbaru dari prambors",
+      "intent": "play_radio_content",
+      "entities": [
+        {
+          "start": 1,
+          "value": "komedi",
+          "entity": "tag"
+        },
+        {
+          "start": 2,
+          "value": "true",
+          "entity": "recent"
+        },
+        {
+          "start": 4,
+          "value": "prambors",
+          "entity": "name_radio"
+        }
+      ]
+    },
+    {
+      "text": "putarkan separuh aku dong",
+      "intent": "play_music",
+      "entities": [
+        {
+          "start": 1,
+          "value": "separuh aku",
+          "entity": "title_song"
+        }
+      ]
+    },
+    {
+      "text": "mainkan playlist my playlist",
+      "intent": "play_playlist",
+      "entities": [
+        {
+          "start": 2,
+          "value": "my playlist",
+          "entity": "name_playlist"
+        }
+      ]
+    },
+    {
+      "text": "tolong mainkan separuh aku",
+      "intent": "play_music",
+      "entities": [
+        {
+          "start": 2,
+          "value": "separuh aku",
+          "entity": "title_song"
+        }
+      ]
+    },
+    {
+      "text": "putar komedi dari prambors",
+      "intent": "play_radio_content",
+      "entities": [
+        {
+          "start": 1,
+          "value": "komedi",
+          "entity": "tag"
+        },
+        {
+          "start": 3,
+          "value": "prambors",
+          "entity": "name_radio"
+        }
+      ]
+    },
+    {
+      "text": "putar berita terbaru dari prambors",
+      "intent": "play_radio_content",
+      "entities": [
+        {
+          "start": 1,
+          "value": "berita",
+          "entity": "tag"
+        },
+        {
+          "start": 2,
+          "value": "true",
+          "entity": "recent"
+        },
+        {
+          "start": 4,
+          "value": "prambors",
+          "entity": "name_radio"
+        }
+      ]
+    },
+    {
+      "text": "tolong mainkan noah",
+      "intent": "play_music",
+      "entities": [
+        {
+          "start": 2,
+          "value": "noah",
+          "entity": "name_artist"
+        }
+      ]
+    },
+    {
+      "text": "mainkan komedi terkini",
+      "intent": "play_radio_content",
+      "entities": [
+        {
+          "start": 1,
+          "value": "komedi",
+          "entity": "tag"
+        },
+        {
+          "start": 2,
+          "value": "true",
+          "entity": "recent"
+        }
+      ]
+    },
+    {
+      "text": "mainkan radio gen fm jakarta",
+      "intent": "play_radio",
+      "entities": [
+        {
+          "start": 2,
+          "value": "gen fm jakarta",
+          "entity": "name_radio"
+        }
+      ]
+    },
+    {
+      "text": "noah separuh aku",
+      "intent": "play_music",
+      "entities": [
+        {
+          "start": 0,
+          "value": "noah",
+          "entity": "name_artist"
+        },
+        {
+          "start": 1,
+          "value": "separuh aku",
+          "entity": "title_song"
+        }
+      ]
+    },
+    {
+      "text": "putarkan musik separuh aku dari noah dong",
+      "intent": "play_music",
+      "entities": [
+        {
+          "start": 2,
+          "value": "separuh aku",
+          "entity": "title_song"
+        },
+        {
+          "start": 5,
+          "value": "noah",
+          "entity": "name_artist"
+        }
+      ]
+    },
+    {
+      "text": "mainkan lagu yang sedang trending ya",
+      "intent": "play_music_popular",
+      "entities": []
+    },
+    {
+      "text": "putarkan musik pamit dari tulus dong",
+      "intent": "play_music",
+      "entities": [
+        {
+          "start": 2,
+          "value": "pamit",
+          "entity": "title_song"
+        },
+        {
+          "start": 4,
+          "value": "tulus",
+          "entity": "name_artist"
+        }
+      ]
+    },
+    {
+      "text": "tolong mainkan tulus",
+      "intent": "play_music",
+      "entities": [
+        {
+          "start": 2,
+          "value": "tulus",
+          "entity": "name_artist"
+        }
+      ]
     }
   ]
 }
