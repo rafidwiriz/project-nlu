@@ -2,8 +2,8 @@ from .token import Token
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 
 def tokenize(sent_data):
-    """SentenceData -> [Token]"""
-    sent_data.set("token", sent_data.get("text").split())
+    """SentenceData* -> None"""
+    sent_data.set("tokens", sent_data.get("text").split())
 
 '''def stem(token):
     """Token* -> ??"""

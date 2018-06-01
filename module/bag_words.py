@@ -12,10 +12,10 @@ class BagOfWords(object):
         self.vocab[self.index] = word
         self.index += 1
 
-    def create_bow(self, text):
+    def create_bow(self, tokens):
         """[str] -> [int]"""
         bow = []
-        count = Counter(text)
+        count = Counter(tokens)
         for i in range(self.index):
             if self.vocab[i] in count:
                 bow.append(count[self.vocab[i]])

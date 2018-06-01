@@ -1,8 +1,8 @@
 def extract_entity(sent_data):
-    """SentenceData* -> Dict"""
+    """SentenceData* -> dict"""
     slot = {}
     entities = sent_data.get("entities")
-    text = sent_data.get("token")
+    text = sent_data.get("tokens")
     for entity in entities:
         slot[entity["entity"]] = entity["value"]
         if not("end" in entity):
