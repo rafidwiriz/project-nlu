@@ -9,8 +9,9 @@ class BagOfWords(object):
     
     def add_word(self, word):
         """str -> None"""
-        self.vocab[self.index] = word
-        self.index += 1
+        if word not in self.vocab.values():
+            self.vocab[self.index] = word
+            self.index += 1
 
     def create_bow(self, tokens):
         """[str] -> [int]"""
