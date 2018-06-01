@@ -9,7 +9,8 @@ def extract_entity(sent_data):
         #if not("end" in entity):
         #    entity["end"] = entity["start"]
         for i in range(entity["start"], end):
-            text[i] = "({})".format(entity["entity"]) if (i == entity["start"]) else 'del'
-    if 'del' in text: text.remove('del')
+            text[i] = "({})".format(entity["entity"]) if (i == entity["start"]) else '#del'
+    while '#del' in text:
+        text.remove('#del')
 
     return slot
