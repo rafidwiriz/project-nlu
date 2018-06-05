@@ -6,13 +6,14 @@ class SentenceData(object):
     def __init__(self, text, entities):
         #self.intent = intent # str
         self.text = text # str
-        self.entities = entities # str
+        self.entities = [] # [str]
+        self.entities_dict = entities # dict
         self.tokens = [] # [str]
         self.pos = [] # [str]
         self.stem = [] # [str]
 
     def get(self, prop):
-        """str -> TrainingData.str"""
+        """str -> attribute TrainingData"""
         return getattr(self, prop)
 
     def set(self, prop, value):

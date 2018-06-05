@@ -572,8 +572,7 @@
       "intent": "play_music",
       "entities": [
         {
-          "start": 6,
-          "end": 17,
+          "start": 1,
           "value": "separuh aku",
           "entity": "title_song"
         }
@@ -584,8 +583,7 @@
       "intent": "play_recommendation",
       "entities": [
         {
-          "start": 8,
-          "end": 13,
+          "start": 1,
           "value": "artis",
           "entity": "type_content"
         }
@@ -596,8 +594,7 @@
       "intent": "play_music",
       "entities": [
         {
-          "start": 20,
-          "end": 25,
+          "start": 3,
           "value": "tulus",
           "entity": "name_artist"
         }
@@ -608,8 +605,7 @@
       "intent": "play_recommendation",
       "entities": [
         {
-          "start": 8,
-          "end": 12,
+          "start": 1,
           "value": "lagu",
           "entity": "type_content"
         }
@@ -620,8 +616,7 @@
       "intent": "play_music",
       "entities": [
         {
-          "start": 10,
-          "end": 21,
+          "start": 2,
           "value": "separuh aku",
           "entity": "title_song"
         }
@@ -632,14 +627,12 @@
       "intent": "play_radio_content",
       "entities": [
         {
-          "start": 8,
-          "end": 31,
+          "start": 1,
           "value": "keluarga tak kasat mata",
           "entity": "title_content"
         },
         {
-          "start": 32,
-          "end": 41,
+          "start": 6,
           "value": "1",
           "entity": "episode"
         }
@@ -650,8 +643,7 @@
       "intent": "play_recommendation",
       "entities": [
         {
-          "start": 6,
-          "end": 10,
+          "start": 1,
           "value": "lagu",
           "entity": "type_content"
         }
@@ -662,8 +654,7 @@
       "intent": "play_playlist",
       "entities": [
         {
-          "start": 15,
-          "end": 26,
+          "start": 2,
           "value": "my playlist",
           "entity": "name_playlist"
         }
@@ -674,8 +665,7 @@
       "intent": "play_music",
       "entities": [
         {
-          "start": 9,
-          "end": 14,
+          "start": 1,
           "value": "pamit",
           "entity": "title_song"
         }
@@ -686,8 +676,7 @@
       "intent": "play_radio",
       "entities": [
         {
-          "start": 15,
-          "end": 23,
+          "start": 2,
           "value": "prambors",
           "entity": "name_radio"
         }
@@ -698,14 +687,12 @@
       "intent": "play_radio_content",
       "entities": [
         {
-          "start": 6,
-          "end": 12,
+          "start": 1,
           "value": "berita",
           "entity": "tag"
         },
         {
-          "start": 18,
-          "end": 32,
+          "start": 3,
           "value": "gen fm jakarta",
           "entity": "name_radio"
         }
@@ -716,8 +703,7 @@
       "intent": "play_music",
       "entities": [
         {
-          "start": 15,
-          "end": 20,
+          "start": 2,
           "value": "pamit",
           "entity": "title_song"
         }
@@ -728,20 +714,17 @@
       "intent": "play_radio_content",
       "entities": [
         {
-          "start": 6,
-          "end": 12,
+          "start": 1,
           "value": "komedi",
           "entity": "tag"
         },
         {
-          "start": 13,
-          "end": 20,
+          "start": 2,
           "value": "true",
           "entity": "recent"
         },
         {
-          "start": 26,
-          "end": 34,
+          "start": 4,
           "value": "prambors",
           "entity": "name_radio"
         }
@@ -752,8 +735,7 @@
       "intent": "play_music",
       "entities": [
         {
-          "start": 20,
-          "end": 24,
+          "start": 3,
           "value": "noah",
           "entity": "name_artist"
         }
@@ -764,14 +746,12 @@
       "intent": "play_radio_content",
       "entities": [
         {
-          "start": 8,
-          "end": 14,
+          "start": 1,
           "value": "berita",
           "entity": "tag"
         },
         {
-          "start": 15,
-          "end": 22,
+          "start": 2,
           "value": "true",
           "entity": "recent"
         }
@@ -782,20 +762,17 @@
       "intent": "play_radio_content",
       "entities": [
         {
-          "start": 6,
-          "end": 19,
+          "start": 1,
           "value": "salah sambung",
           "entity": "tag"
         },
         {
-          "start": 20,
-          "end": 27,
+          "start": 3,
           "value": "true",
           "entity": "recent"
         },
         {
-          "start": 33,
-          "end": 47,
+          "start": 5,
           "value": "gen fm jakarta",
           "entity": "name_radio"
         }
@@ -806,14 +783,12 @@
       "intent": "play_radio_content",
       "entities": [
         {
-          "start": 8,
-          "end": 14,
+          "start": 1,
           "value": "berita",
           "entity": "tag"
         },
         {
-          "start": 15,
-          "end": 22,
+          "start": 2,
           "value": "true",
           "entity": "recent"
         }
@@ -824,8 +799,7 @@
       "intent": "play_music",
       "entities": [
         {
-          "start": 8,
-          "end": 13,
+          "start": 1,
           "value": "pamit",
           "entity": "title_song"
         }
@@ -836,8 +810,7 @@
       "intent": "play_recommendation",
       "entities": [
         {
-          "start": 6,
-          "end": 11,
+          "start": 1,
           "value": "album",
           "entity": "type_content"
         }
@@ -849,13 +822,11 @@
       "entities": [
         {
           "start": 0,
-          "end": 5,
           "value": "tulus",
           "entity": "name_artist"
         },
         {
-          "start": 6,
-          "end": 11,
+          "start": 1,
           "value": "pamit",
           "entity": "title_song"
         }
@@ -866,8 +837,7 @@
       "intent": "play_radio",
       "entities": [
         {
-          "start": 14,
-          "end": 22,
+          "start": 2,
           "value": "prambors",
           "entity": "name_radio"
         }
@@ -878,20 +848,17 @@
       "intent": "play_radio_content",
       "entities": [
         {
-          "start": 6,
-          "end": 12,
+          "start": 1,
           "value": "berita",
           "entity": "tag"
         },
         {
-          "start": 13,
-          "end": 20,
+          "start": 2,
           "value": "true",
           "entity": "recent"
         },
         {
-          "start": 26,
-          "end": 34,
+          "start": 4,
           "value": "prambors",
           "entity": "name_radio"
         }
@@ -902,14 +869,12 @@
       "intent": "play_music",
       "entities": [
         {
-          "start": 15,
-          "end": 26,
+          "start": 2,
           "value": "separuh aku",
           "entity": "title_song"
         },
         {
-          "start": 32,
-          "end": 37,
+          "start": 5,
           "value": "tulus",
           "entity": "name_artist"
         }
@@ -920,14 +885,12 @@
       "intent": "play_music",
       "entities": [
         {
-          "start": 15,
-          "end": 20,
+          "start": 2,
           "value": "pamit",
           "entity": "title_song"
         },
         {
-          "start": 26,
-          "end": 30,
+          "start": 4,
           "value": "noah",
           "entity": "name_artist"
         }
@@ -938,14 +901,12 @@
       "intent": "play_music",
       "entities": [
         {
-          "start": 12,
-          "end": 17,
+          "start": 2,
           "value": "tulus",
           "entity": "name_artist"
         },
         {
-          "start": 18,
-          "end": 23,
+          "start": 3,
           "value": "pamit",
           "entity": "title_song"
         }
@@ -956,8 +917,7 @@
       "intent": "play_music",
       "entities": [
         {
-          "start": 12,
-          "end": 30,
+          "start": 2,
           "value": "seperti seharusnya",
           "entity": "title_album"
         }
@@ -968,14 +928,12 @@
       "intent": "play_radio_content",
       "entities": [
         {
-          "start": 8,
-          "end": 21,
+          "start": 1,
           "value": "salah sambung",
           "entity": "tag"
         },
         {
-          "start": 22,
-          "end": 29,
+          "start": 3,
           "value": "true",
           "entity": "recent"
         }
@@ -986,8 +944,7 @@
       "intent": "play_music",
       "entities": [
         {
-          "start": 15,
-          "end": 20,
+          "start": 2,
           "value": "pamit",
           "entity": "title_song"
         }
@@ -998,20 +955,17 @@
       "intent": "play_radio_content",
       "entities": [
         {
-          "start": 6,
-          "end": 12,
+          "start": 1,
           "value": "komedi",
           "entity": "tag"
         },
         {
-          "start": 13,
-          "end": 20,
+          "start": 2,
           "value": "true",
           "entity": "recent"
         },
         {
-          "start": 26,
-          "end": 40,
+          "start": 4,
           "value": "gen fm jakarta",
           "entity": "name_radio"
         }
@@ -1023,13 +977,11 @@
       "entities": [
         {
           "start": 0,
-          "end": 5,
           "value": "pamit",
           "entity": "title_song"
         },
         {
-          "start": 11,
-          "end": 16,
+          "start": 2,
           "value": "tulus",
           "entity": "name_artist"
         }
@@ -1040,14 +992,12 @@
       "intent": "play_radio_content",
       "entities": [
         {
-          "start": 6,
-          "end": 12,
+          "start": 1,
           "value": "berita",
           "entity": "tag"
         },
         {
-          "start": 18,
-          "end": 26,
+          "start": 3,
           "value": "prambors",
           "entity": "name_radio"
         }
@@ -1058,14 +1008,12 @@
       "intent": "play_radio_content",
       "entities": [
         {
-          "start": 8,
-          "end": 21,
+          "start": 1,
           "value": "salah sambung",
           "entity": "tag"
         },
         {
-          "start": 22,
-          "end": 29,
+          "start": 3,
           "value": "true",
           "entity": "recent"
         }
@@ -1076,8 +1024,7 @@
       "intent": "play_music",
       "entities": [
         {
-          "start": 13,
-          "end": 24,
+          "start": 2,
           "value": "separuh aku",
           "entity": "title_song"
         }
@@ -1088,14 +1035,12 @@
       "intent": "play_music",
       "entities": [
         {
-          "start": 12,
-          "end": 16,
+          "start": 2,
           "value": "noah",
           "entity": "name_artist"
         },
         {
-          "start": 17,
-          "end": 22,
+          "start": 3,
           "value": "pamit",
           "entity": "title_song"
         }
@@ -1106,8 +1051,7 @@
       "intent": "play_music",
       "entities": [
         {
-          "start": 15,
-          "end": 26,
+          "start": 2,
           "value": "separuh aku",
           "entity": "title_song"
         }
@@ -1119,13 +1063,11 @@
       "entities": [
         {
           "start": 0,
-          "end": 4,
           "value": "noah",
           "entity": "name_artist"
         },
         {
-          "start": 5,
-          "end": 10,
+          "start": 1,
           "value": "pamit",
           "entity": "title_song"
         }
@@ -1136,8 +1078,7 @@
       "intent": "play_recommendation",
       "entities": [
         {
-          "start": 6,
-          "end": 11,
+          "start": 1,
           "value": "artis",
           "entity": "type_content"
         }
@@ -1148,14 +1089,12 @@
       "intent": "play_radio_content",
       "entities": [
         {
-          "start": 6,
-          "end": 19,
+          "start": 1,
           "value": "salah sambung",
           "entity": "tag"
         },
         {
-          "start": 25,
-          "end": 39,
+          "start": 4,
           "value": "gen fm jakarta",
           "entity": "name_radio"
         }
@@ -1166,20 +1105,17 @@
       "intent": "play_radio_content",
       "entities": [
         {
-          "start": 6,
-          "end": 12,
+          "start": 1,
           "value": "berita",
           "entity": "tag"
         },
         {
-          "start": 13,
-          "end": 20,
+          "start": 2,
           "value": "true",
           "entity": "recent"
         },
         {
-          "start": 26,
-          "end": 40,
+          "start": 4,
           "value": "gen fm jakarta",
           "entity": "name_radio"
         }
@@ -1190,8 +1126,7 @@
       "intent": "play_playlist",
       "entities": [
         {
-          "start": 17,
-          "end": 29,
+          "start": 2,
           "value": "hits terbaik",
           "entity": "name_playlist"
         }
@@ -1202,8 +1137,7 @@
       "intent": "play_recommendation",
       "entities": [
         {
-          "start": 8,
-          "end": 16,
+          "start": 1,
           "value": "playlist",
           "entity": "type_content"
         }
@@ -1214,20 +1148,17 @@
       "intent": "play_radio_content",
       "entities": [
         {
-          "start": 6,
-          "end": 12,
+          "start": 1,
           "value": "berita",
           "entity": "tag"
         },
         {
-          "start": 13,
-          "end": 20,
+          "start": 2,
           "value": "true",
           "entity": "recent"
         },
         {
-          "start": 26,
-          "end": 40,
+          "start": 4,
           "value": "gen fm jakarta",
           "entity": "name_radio"
         }
@@ -1239,13 +1170,11 @@
       "entities": [
         {
           "start": 0,
-          "end": 11,
           "value": "separuh aku",
           "entity": "title_song"
         },
         {
-          "start": 17,
-          "end": 22,
+          "start": 3,
           "value": "tulus",
           "entity": "name_artist"
         }
@@ -1256,14 +1185,12 @@
       "intent": "play_radio_content",
       "entities": [
         {
-          "start": 8,
-          "end": 14,
+          "start": 1,
           "value": "komedi",
           "entity": "tag"
         },
         {
-          "start": 15,
-          "end": 22,
+          "start": 2,
           "value": "true",
           "entity": "recent"
         }
@@ -1275,13 +1202,11 @@
       "entities": [
         {
           "start": 0,
-          "end": 5,
           "value": "pamit",
           "entity": "title_song"
         },
         {
-          "start": 11,
-          "end": 15,
+          "start": 2,
           "value": "noah",
           "entity": "name_artist"
         }
@@ -1292,8 +1217,7 @@
       "intent": "play_radio",
       "entities": [
         {
-          "start": 5,
-          "end": 13,
+          "start": 1,
           "value": "prambors",
           "entity": "name_radio"
         }
@@ -1304,14 +1228,12 @@
       "intent": "play_radio_content",
       "entities": [
         {
-          "start": 6,
-          "end": 19,
+          "start": 1,
           "value": "salah sambung",
           "entity": "tag"
         },
         {
-          "start": 25,
-          "end": 33,
+          "start": 4,
           "value": "prambors",
           "entity": "name_radio"
         }
