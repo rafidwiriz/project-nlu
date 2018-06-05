@@ -26,5 +26,5 @@ class BagOfWords(object):
 
     def create_labels(self):
         """None -> [str]"""
-        labels = self.vocab.values()
+        labels = list(self.vocab.values())
         return labels
