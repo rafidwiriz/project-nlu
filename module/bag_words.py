@@ -14,7 +14,7 @@ class BagOfWords(object):
             self.index += 1
 
     def create_bow(self, tokens):
-        """[str] -> tuple"""
+        """[str] -> [str]"""
         bow = []
         count = Counter(tokens)
         for i in range(self.index):
@@ -22,9 +22,22 @@ class BagOfWords(object):
                 bow.append(count[self.vocab[i]])
             else:
                 bow.append(0)
-        return tuple(bow)
+        return bow
+
+    def create_bow_keys(self, tokens):
+        """"""
+        keys = self.create_labels()
+        bow_keys = []
+        for word in tokens:
+            bow_keys.append(keys.index(word))
+        return bow_keys
 
     def create_labels(self):
         """None -> [str]"""
         labels = list(self.vocab.values())
         return labels
+
+    def create_keys(self):
+        """None -> [str]"""
+        keys = list(self.vocab.keys())
+        return keys
