@@ -25,7 +25,7 @@ class BagOfWords(object):
         return bow
 
     def create_bow_keys(self, tokens):
-        """"""
+        """[str] -> [str]"""
         keys = self.create_labels()
         bow_keys = []
         for word in tokens:

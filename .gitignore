@@ -1,3 +1,5 @@
 dev-folder
 __pycache__
 .vscode
+*.ipynb
+.ipynb_checkpoints

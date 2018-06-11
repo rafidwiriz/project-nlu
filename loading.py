@@ -3,6 +3,7 @@ from module.entity_extractor import extract_entity
 from module.load_data import load_data
 from module.tokenizer import tokenize, stem
 from module.bag_words import BagOfWords
+from module.trainer import train_grid_search_svara
 import pandas as pd
 
 train, intents = load_data('data/svara_training.json')
@@ -28,4 +29,4 @@ for i, sent in enumerate(train):
     bow_tuple = tuple(vocab_data.create_bow(sent.token_to_ent()) + intent_data.create_bow_keys([intents[i]]))
     bow_tuples.append(bow_tuple)
 df = pd.DataFrame.from_records(bow_tuples, columns=labels)
-print(df.head())
+clf = train_grid_search_svara(df)
