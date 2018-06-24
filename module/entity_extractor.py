@@ -1,19 +1,22 @@
 from copy import deepcopy
 
-def extract_entity(sent_data):
+def extract_entity(sent_data, entities):
     """SentenceData* -> dict"""
     slot = {}
-    entities = sent_data.get("entities_dict")
-    text = ['O']*(len(sent_data.get("tokens")))
+    text = ['O']*(len(sent_data.get("text").split()))
     for entity in entities:
         slot[entity["entity"]] = entity["value"]
         end = entity["start"] + len(entity["value"].split())
-        #if not("end" in entity):
-        #    entity["end"] = entity["start"]
         for i in range(entity["start"], end):
-            text[i] = "{}".format(entity["entity"])# if (i == entity["start"]) else '#del'
-    while '#del' in text:
-        text.remove('#del')
+            if (entity["start"] == (end - 1)):
+                text[i] = "U-{}".format(entity["entity"])
+            else:
+                if (i == entity["start"]):
+                    text[i] = "B-{}".format(entity["entity"])
+                elif (i == (end - 1)):
+                    text[i] = "L-{}".format(entity["entity"])
+                else:
+                    text[i] = "I-{}".format(entity["entity"])
     sent_data.set("entities", text)
 
     return slot

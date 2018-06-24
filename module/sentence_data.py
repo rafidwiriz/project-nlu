@@ -3,11 +3,11 @@ import json
 class SentenceData(object):
     """Bertanggungjawab dalam memuat dan memproses data kalimat."""
 
-    def __init__(self, text, entities):
+    def __init__(self, text):
         #self.intent = intent # str
         self.text = text # str
         self.entities = [] # [str]
-        self.entities_dict = entities # dict
+        #self.entities_dict = entities # dict
         self.tokens = [] # [str]
         self.pos = [] # [str]
         self.stem = [] # [str]
@@ -22,12 +22,10 @@ class SentenceData(object):
     def token_to_ent(self):
         """None -> [str]"""
         token2ent = []
-        ent_before = ""
         for token, ent in zip(self.tokens, self.entities):
             if (ent == 'O'):
                 token2ent.append(token)
             else:
-                if (ent != ent_before):
+                if (ent[0] == 'B') or (ent[0] == 'U'):
                     token2ent.append(ent)
-            ent_before = ent
         return token2ent
