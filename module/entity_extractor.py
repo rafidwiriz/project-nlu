@@ -1,7 +1,7 @@
 from copy import deepcopy
 
-def extract_entity(sent_data, entities):
-    """SentenceData* -> dict"""
+def entity_tag(sent_data, entities):
+    """SentenceData*, dict -> None"""
     slot = {}
     text = ['O']*(len(sent_data.get("text").split()))
     for entity in entities:
@@ -19,4 +19,5 @@ def extract_entity(sent_data, entities):
                     text[i] = "I-{}".format(entity["entity"])
     sent_data.set("entities", text)
 
-    return slot
+def extract_entity(sent_data, entities):
+    pass
