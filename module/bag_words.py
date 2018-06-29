@@ -18,10 +18,13 @@ class BagOfWords(object):
         bow = []
         count = Counter(tokens)
         for i in range(self.index):
+            x = 1 if self.vocab[i] in count else 0
+            bow.append(x)
+            '''
             if self.vocab[i] in count:
                 bow.append(count[self.vocab[i]])
             else:
-                bow.append(0)
+                bow.append(0)'''
         return bow
 
     def create_bow_keys(self, tokens):
