@@ -2,7 +2,8 @@ import io
 import json
 from pathlib import Path
 from .sentence_data import SentenceData
-from .entity_extractor import entity_tag, extract_entity
+from .entity_extractor import extract_entity
+from .entity_tagger import entity_tag
 
 def load_data(file_dir):
     """str -> [SentenceData], [str]"""
@@ -13,7 +14,7 @@ def load_data(file_dir):
         json_file = json.load(json_data)
     for data in json_file["sentences"]:
         train_data = SentenceData(data["text"])
-        entity_tag(train_data, data["entities"])
+        entity_tag(train_data, data["entities"], scheme="IOB")
         label_datas.append(data["intent"])
         train_datas.append(train_data)
     return train_datas, label_datas

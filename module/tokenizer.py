@@ -1,9 +1,9 @@
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 stemmer = StemmerFactory().create_stemmer()
 
-from nltk.tag import CRFTagger
-ct = CRFTagger()
-ct.set_model_file('data/all_indo_man_tag_corpus_model.crf.tagger')
+#from nltk.tag import CRFTagger
+#ct = CRFTagger()
+#ct.set_model_file('data/all_indo_man_tag_corpus_model.crf.tagger')
 #ct.set_model_file('id_gsd-ud-train-morphind.crf.tagger')
 
 def tokenize(sent_data):

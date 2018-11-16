@@ -10,9 +10,8 @@ vocab_data = BagOfWords()
 intent_data = BagOfWords()
 for sent, intent in zip(train, intents):
     tokenize(sent)
-    stem(sent)
+    # stem(sent)
     intent_data.add_word(intent)
-for sent in train:
     for token in sent.token_to_ent():
         vocab_data.add_word(token)
 labels = vocab_data.create_labels()
