@@ -3,9 +3,9 @@ from collections import Counter
 class BagOfWords(object):
     """Bertanggungjawab dalam pembuatan bag-of-words tiap kalimat."""
 
-    def __init__(self):
-        self.vocab = {} # dict
-        self.index = 0 # int
+    def __init__(self, vocab=None):
+        self.vocab = {0: "UNK"} if vocab == None else vocab # dict
+        self.index = 1 if vocab == None else len(vocab) # int
     
     def add_word(self, word):
         """str -> None"""

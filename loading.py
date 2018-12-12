@@ -6,6 +6,7 @@ from module.entity_extractor import extract_entity
 from module import trainer
 from sklearn.externals import joblib
 import pandas as pd
+import json
 
 train, intents = load_data('data/svara_training.json')
 
@@ -16,10 +17,6 @@ for sent, intent in zip(train, intents):
     tokenize(sent)
     # stem(sent)
     intent_data.add_word(intent)
-    for token in sent.token_to_ent():
-        vocab_data.add_word(token)
-
-for sent in train:
     for token in sent.token_to_ent():
         vocab_data.add_word(token)
 
@@ -41,3 +38,5 @@ clf2 = trainer.train_grid_search_svara(df)
 
 model.save('model/model.h5')
 joblib.dump(clf2, 'model/clf2.pkl')
+with open('model/dicts.json', 'w') as fp:
+    json.dump(dicts, fp)

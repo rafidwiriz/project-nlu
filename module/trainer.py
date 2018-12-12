@@ -77,15 +77,15 @@ def train_entities(train_set, valid_set, dicts):
     for i in range(n_epochs):
         print("Training epoch {}".format(i))
     
-    bar = progressbar.ProgressBar(maxval=len(train_x))
-    for n_batch, sent in bar(enumerate(train_x)):
-        label = train_label[n_batch]
-        # Make labels one hot
-        label = np.eye(n_classes)[label][np.newaxis,:] 
-        # View each sentence as a batch
-        sent = sent[np.newaxis,:]
+        bar = progressbar.ProgressBar(maxval=len(train_x))
+        for n_batch, sent in bar(enumerate(train_x)):
+            label = train_label[n_batch]
+            # Make labels one hot
+            label = np.eye(n_classes)[label][np.newaxis,:] 
+            # View each sentence as a batch
+            sent = sent[np.newaxis,:]
 
-        if sent.shape[1] > 1: #ignore 1 word sentences
-            model.train_on_batch(sent, label)
+            if sent.shape[1] > 1: #ignore 1 word sentences
+                model.train_on_batch(sent, label)
 
     return model
