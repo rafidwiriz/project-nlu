@@ -34,7 +34,7 @@ def witSound():
 def slu(txt):
     text = SentenceData(txt)
 
-    text_predict = np.array(list(map(lambda x: word2index(x), text.get("text").split())))
+    text_predict = np.array(list(map(lambda x: toIndex(x, w2idx), text.get("text").split())))
     text_predict = text_predict[np.newaxis,:]
     pred = model.predict_on_batch(np.array(text_predict))
     pred = np.argmax(pred,-1)[0]
@@ -60,21 +60,21 @@ def slu(txt):
 
     return response
 
-def word2index(txt):
-    minVal = len(txt)
-    idx = 0
-    for i in range(1, len(w2idx)):
-        val = nltk.edit_distance(txt, idx2w[i])
-        if val == 0:
-            return i
-        else:
+def toIndex(txt, dict):
+    if dict.get(txt, None):
+        return dict[txt]
+    else:
+        minVal = len(txt)
+        idx = 0
+        for word, i in dict.items():
+            val = nltk.edit_distance(txt, word)
             if val < minVal:
                 minVal = val
                 idx = i
-    if minVal < 3:
-        return idx
-    else:
-        return 0
+        if minVal < 3:
+            return idx
+        else:
+            return 0
 
 if __name__ == "__main__":
     clf2 = joblib.load('model/clf2.pkl')
