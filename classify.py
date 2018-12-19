@@ -1,27 +1,24 @@
 from module.sentence_data import SentenceData
-from module.load_data import load_data
-from module.tokenizer import tokenize, stem
 from module.bag_words import BagOfWords
-from module import trainer
 from sklearn.externals import joblib
 from keras.models import load_model
+from json import load
 import pandas as pd
 import numpy as np
-import json
 
 clf2 = joblib.load('model/clf2.pkl')
 model = load_model('model/model.h5')
 
 with open('model/dicts.json', 'r') as fp:
-    dicts = json.load(fp)
+    dicts = load(fp)
     
 with open('model/vocab.json', 'r') as fp:
-    vocab = json.load(fp)
+    vocab = load(fp)
     vocab = {int(k):vocab[k] for k in vocab}
     vocab_data = BagOfWords(vocab)
     
 with open('model/intent.json', 'r') as fp:
-    intent = json.load(fp)
+    intent = load(fp)
     intent = {int(k):intent[k] for k in intent}
 
 w2idx, labels2idx = dicts['words2idx'], dicts['labels2idx']
