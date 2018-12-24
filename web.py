@@ -20,7 +20,7 @@ def witSound():
     res = requests.post("https://api.wit.ai/speech", params=params, headers=headers, data=request.get_data())
     res = res.json()
 
-    r = slu(res['text'])
+    r = slu(res['_text'])
 
     if r:
         r = make_response(jsonify(r))
